@@ -33,7 +33,7 @@ namespace IntenseWork
 
         public void ParallelStart()
         {
-            Parallel.For(0, 10, new ParallelOptions {MaxDegreeOfParallelism = 3}, x => start());
+            Parallel.For(0, 1000, new ParallelOptions {MaxDegreeOfParallelism = 3}, x => start());
         }
 
         public void date()
